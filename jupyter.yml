@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  scipy-notebook:
+    ports:
+      - 10000:8888
+    image: quay.io/jupyter/scipy-notebook:2025-02-12
+networks: {}
