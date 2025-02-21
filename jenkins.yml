@@ -3,6 +3,11 @@ services:
   jenkins:
     ports:
       - 8080:8080
+      - 50000:50000
     restart: on-failure
+    volumes:
+      - jenkins_home:/var/jenkins_home
     image: jenkins/jenkins:lts-jdk17
+volumes:
+  jenkins_home: {}
 networks: {}
