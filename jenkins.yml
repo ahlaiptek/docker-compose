@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  jenkins:
+    ports:
+      - 8080:8080
+    restart: on-failure
+    image: jenkins/jenkins:lts-jdk17
+networks: {}
