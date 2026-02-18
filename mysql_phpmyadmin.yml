@@ -1,7 +1,7 @@
 services:
   db:
     image: mysql
-    restart: always
+    #restart: always
     environment:
       MYSQL_DATABASE: db
       # So you don't have to use root, but you can if you like
@@ -22,7 +22,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    restart: always
+    #restart: always
     ports:
       - 8080:80
     environment:
