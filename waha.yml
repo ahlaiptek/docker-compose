@@ -1,0 +1,9 @@
+services:
+  waha:
+    image: devlikeapro/waha:latest
+    container_name: waha
+    ports:
+      - "3001:3000"
+    volumes:
+      - ~/waha:/app/data
+    #restart: unless-stopped
